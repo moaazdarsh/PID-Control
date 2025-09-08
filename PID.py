@@ -22,7 +22,7 @@ while t < t_end:
     
     P = K_p * E[-1]
     if len(E) > 1:
-        I = K_i * np.trapz(E)
+        I = K_i * np.trapezoid(E)
         D = K_d * (E[-1] - E[-2])
     
     T += P + I + D
